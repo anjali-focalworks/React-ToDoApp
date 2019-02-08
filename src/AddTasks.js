@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import TodoList from './Todolist'
-
+import './App.css';
 export default class AddTasks extends Component {
     constructor(props) {
         super(props);
@@ -19,7 +19,7 @@ export default class AddTasks extends Component {
                         <h3>Add Tasks</h3>
                         <form onSubmit={this.handleSubmit}>
                             <div className='form-group'>
-                                <label for='txt-task'>Add your task</label>
+                                <label>Add your task</label>
                                 <input id='txt-task' className='form-control' value={this.state.text} type='text' onChange={this.handleChange}></input>
                                 
                             </div>
